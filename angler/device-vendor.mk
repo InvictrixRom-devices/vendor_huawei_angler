@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
     CABLService \
     HwMMITest \
     HwSarControlService \
+    ims \
     qcrilmsgtunnel \
     TimeService \
     Tycho 
@@ -42,6 +43,8 @@ PRODUCT_PACKAGES += \
 
 # Symlinks
 PRODUCT_PACKAGES += \
+    libimsmedia_jni.so \
+    libimscamera_jni.so \
     libdmengine.so \
     libdmjavaplugin.so \
     libManufacture.so
