@@ -19,6 +19,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libManufacture.so
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
+LOCAL_MULTILIB := both
 include $(BUILD_SYSTEM)/base_rules.mk
 $(LOCAL_BUILT_MODULE): TARGET := /lib64/libManufacture.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/app/HwMMITest/lib/arm64/$(LOCAL_MODULE)
@@ -35,6 +36,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libimsmedia_jni.so
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
+LOCAL_MULTILIB := both
 include $(BUILD_SYSTEM)/base_rules.mk
 $(LOCAL_BUILT_MODULE): TARGET := /lib64/libimsmedia_jni.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/app/ims/lib/arm64/$(LOCAL_MODULE)
@@ -51,6 +53,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libimscamera_jni.so
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
+LOCAL_MULTILIB := both
 include $(BUILD_SYSTEM)/base_rules.mk
 $(LOCAL_BUILT_MODULE): TARGET := /lib64/libimscamera_jni.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/app/ims/lib/arm64/$(LOCAL_MODULE)

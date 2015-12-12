@@ -19,6 +19,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libdmengine.so
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
+LOCAL_MULTILIB := both
 include $(BUILD_SYSTEM)/base_rules.mk
 $(LOCAL_BUILT_MODULE): TARGET := /lib/libdmengine.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/priv-app/DMService/lib/arm/$(LOCAL_MODULE)
@@ -35,6 +36,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libdmjavaplugin.so
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
+LOCAL_MULTILIB := both
 include $(BUILD_SYSTEM)/base_rules.mk
 $(LOCAL_BUILT_MODULE): TARGET := /lib/libdmjavaplugin.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/priv-app/DMService/lib/arm/$(LOCAL_MODULE)
