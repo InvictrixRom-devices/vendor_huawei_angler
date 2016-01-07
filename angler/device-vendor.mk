@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
     HwSarControlService \
     ims \
     qcrilmsgtunnel \
+    SetupSmartDeviceOverlay \
     TimeService \
     Tycho 
 
