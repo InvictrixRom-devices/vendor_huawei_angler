@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The Pure Nexus Project
+# Copyright (C) 2016 DirtyUnivorns
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,38 +14,58 @@
 
 $(call inherit-product, vendor/huawei/angler/angler-vendor-blobs.mk)
 
-# Prebuilt APKs
+# Prebuilt APKs/JARs from 'vendor/app'
 PRODUCT_PACKAGES += \
-    CABLService \
-    HwMMITest \
-    HwSarControlService \
-    ims \
-    qcrilmsgtunnel \
-    SetupSmartDeviceOverlay \
     TimeService \
-    Tycho 
+    ims
 
-# Prebuilt jars
+# Prebuilt APKs libs symlinks from 'vendor/app'
 PRODUCT_PACKAGES += \
-    qcrilhook
+    libimscamera_jni_64.so \
+    libimsmedia_jni_64.so
 
-# Prebuilt privileged APKs
+# Prebuilt APKs/JARs from 'proprietary/app'
 PRODUCT_PACKAGES += \
-    CallStatistics \
+    HwMMITest \
+    Tycho \
+    HwSarControlService \
+    SetupSmartDeviceOverlay
+
+# Prebuilt APKs libs symlinks from 'proprietary/app'
+PRODUCT_PACKAGES += \
+    libManufacture_64.so
+
+# Prebuilt APKs/JARs from 'proprietary/framework'
+PRODUCT_PACKAGES += \
+    qcrilhook \
+    com.google.widevine.software.drm \
+    com.google.android.camera.experimental2015
+
+# Prebuilt APKs/JARs from 'proprietary/priv-app'
+PRODUCT_PACKAGES += \
+    HotwordEnrollment \
+    Entitlement \
+    DCMO \
+    SprintDM \
     CNEService \
     ConnMO \
-    DCMO \
-    DiagMon \
     DMService \
-    GCS \
+    CallStatistics \
+    DiagMon \
+    qcrilmsgtunnel \
+    CarrierEntitlement \
     HiddenMenu \
-    HotwordEnrollment \
-    SprintDM
+    ConfigUpdater
 
-# Symlinks
+# Prebuilt APKs libs symlinks from 'proprietary/priv-app'
 PRODUCT_PACKAGES += \
-    libimsmedia_jni.so \
-    libimscamera_jni.so \
-    libdmengine.so \
-    libdmjavaplugin.so \
-    libManufacture.so
+    libdmengine_32.so \
+    libdmjavaplugin_32.so
+
+# Prebuilt shared libraries from 'vendor'
+PRODUCT_PACKAGES += \
+    libqmi_common_so \
+    libqmi_csi \
+    libdsi_netctrl \
+    libqmiservices \
+    libqmi_cci
