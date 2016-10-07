@@ -1,2 +1,6 @@
-# Auto-generated file, do not edit
+# [2016-10-08] Auto-generated file, do not edit
+
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_PARTITION_SIZE := 209715200
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE :=
 
