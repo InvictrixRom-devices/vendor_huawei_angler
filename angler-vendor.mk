@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/etc/diag/Angler_Radio-general.cfg:system/etc/diag/Angler_Radio-general.cfg \
     vendor/huawei/angler/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/huawei/angler/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
+    vendor/huawei/angler/proprietary/etc/permissions/com.google.android.camera.experimental2016.xml:system/etc/permissions/com.google.android.camera.xml \
     vendor/huawei/angler/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/huawei/angler/proprietary/lib64/hw/activity_recognition.angler.so:system/lib64/hw/activity_recognition.angler.so \
     vendor/huawei/angler/proprietary/lib64/hw/context_hub.default.so:system/lib64/hw/context_hub.default.so \
@@ -31,7 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/lib64/libManufacture.so:system/lib64/libManufacture.so \
     vendor/huawei/angler/proprietary/lib64/libprotobuf-cpp-full.so:system/lib64/libprotobuf-cpp-full.so \
     vendor/huawei/angler/proprietary/lib64/librmnetctl.so:system/lib64/librmnetctl.so \
-    vendor/huawei/angler/proprietary/lib64/libtinyxml.so:system/lib64/libtinyxml.so \
     vendor/huawei/angler/proprietary/lib/hw/activity_recognition.angler.so:system/lib/hw/activity_recognition.angler.so \
     vendor/huawei/angler/proprietary/lib/hw/context_hub.default.so:system/lib/hw/context_hub.default.so \
     vendor/huawei/angler/proprietary/lib/hw/nfc_nci.angler.so:system/lib/hw/nfc_nci.angler.so \
@@ -42,7 +42,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/lib/libhubconnection.so:system/lib/libhubconnection.so \
     vendor/huawei/angler/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/huawei/angler/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
-    vendor/huawei/angler/proprietary/lib/libtinyxml.so:system/lib/libtinyxml.so \
     vendor/huawei/angler/proprietary/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so
 
 PRODUCT_PACKAGES += \
@@ -50,7 +49,9 @@ PRODUCT_PACKAGES += \
     HotwordEnrollment \
     qcrilmsgtunnel \
     com.google.widevine.software.drm \
-    qcrilhook
+    com.google.android.camera.experimental2016 \
+    qcrilhook \
+    SprintDM
 
 PRODUCT_PACKAGES += \
     ims \
