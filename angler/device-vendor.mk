@@ -30,6 +30,8 @@ PRODUCT_PACKAGES += \
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
     CallStatistics \
+    CarrierEntitlement \
+    CarrierServices \
     CNEService \
     ConnMO \
     DCMO \
