@@ -25,7 +25,8 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
-    qcrilhook
+    qcrilhook \
+    com.google.widevine.software.drm
 
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
