@@ -1,4 +1,4 @@
-# Copyright (C) 2015-2016 The Pure Nexus Project
+# Copyright (C) 2015-2017 The Pure Nexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,11 +26,14 @@ PRODUCT_PACKAGES += \
 # Prebuilt jars
 PRODUCT_PACKAGES += \
     qcrilhook \
-    com.google.widevine.software.drm
+    com.google.widevine.software.drm \
+    com.google.android.camera.experimental2016
 
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
     CallStatistics \
+    CarrierEntitlement \
+    CarrierServices \
     CNEService \
     ConnMO \
     DCMO \

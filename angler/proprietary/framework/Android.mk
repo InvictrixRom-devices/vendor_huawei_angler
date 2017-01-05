@@ -1,4 +1,4 @@
-# Copyright (C) 2015-2016 The Pure Nexus Project
+# Copyright (C) 2015-2017 The Pure Nexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,6 +29,15 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := com.google.widevine.software.drm
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := com.google.widevine.software.drm.jar
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.google.android.camera.experimental2016
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := com.google.android.camera.experimental2016.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
