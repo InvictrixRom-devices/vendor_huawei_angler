@@ -25,8 +25,8 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
-    qcrilhook \
-    com.google.android.camera.experimental2016
+    com.google.android.camera.experimental2016 \
+    qcrilhook
 
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
