@@ -1,10 +1,10 @@
-# Copyright (C) 2016 The Pure Nexus Project
+# Copyright (C) 2017 The Pure Nexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+# http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -21,17 +21,18 @@ PRODUCT_PACKAGES += \
     ims \
     SetupSmartDeviceOverlay \
     TimeService \
-    Tycho 
+    Tycho \
+    Turbo
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
-    qcrilhook
+    qcrilhook \
+    com.google.android.camera.experimental2016
 
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
     atfwd \
     CallStatistics \
-    CarrierEntitlement \
     CarrierServices \
     CNEService \
     ConnMO \
@@ -40,7 +41,7 @@ PRODUCT_PACKAGES += \
     DMService \
     GCS \
     HiddenMenu \
-    HotwordEnrollment \
+    HotwordEnrollmentWCD9330 \
     qcrilmsgtunnel \
     SprintDM
 

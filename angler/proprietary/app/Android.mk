@@ -1,4 +1,4 @@
-# Copyright (C) 2015-2017 The Pure Nexus Project
+# Copyright (C) 2017 The Pure Nexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -65,6 +65,15 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := Tycho
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := Tycho/Tycho.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Turbo
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := Turbo/Turbo.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
