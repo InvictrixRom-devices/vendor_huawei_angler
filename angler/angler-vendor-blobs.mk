@@ -30,9 +30,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/huawei/angler/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/huawei/angler/proprietary/lib/libtinyxml2.so:system/lib/libtinyxml2.so \
-    vendor/huawei/angler/proprietary/lib/soundfx/libqcomvoiceprocessingdescriptors.so:system/lib/soundfx/libqcomvoiceprocessingdescriptors.so \
     vendor/huawei/angler/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/huawei/angler/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/huawei/angler/proprietary/lib64/libManufacture.so:system/lib64/libManufacture.so \
-    vendor/huawei/angler/proprietary/lib64/libtinyxml2.so:system/lib64/libtinyxml2.so \
-    vendor/huawei/angler/proprietary/lib64/soundfx/libqcomvoiceprocessingdescriptors.so:system/lib64/soundfx/libqcomvoiceprocessingdescriptors.so
+    vendor/huawei/angler/proprietary/lib64/libtinyxml2.so:system/lib64/libtinyxml2.so
